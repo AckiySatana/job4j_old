@@ -1,2 +1,4 @@
 # job4j
-Nope
+
+-- https://github.com/AckiySatana/job4j
+-- mkdir dist
