@@ -15,7 +15,10 @@ public class Calculate {
      * @param args - args.
      */
 	public static void main(String[] args) {
-		System.out.println("Hello World ");
+
+	String s;
+		s = echo("Zz Zzz Zzzz");
+		System.out.println("Hello World "+s);
 	}
 	
 	
@@ -24,7 +27,7 @@ public class Calculate {
 	* @param name My name.
 	* @return Echo *3 plus my name.
 	*/
-	public String echo(String name) {
+	public static String echo(String name) {
 		return "Echo, echo, echo : " + name;
 	}
 		
