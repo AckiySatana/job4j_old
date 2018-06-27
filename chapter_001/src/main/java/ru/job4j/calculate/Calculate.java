@@ -11,7 +11,7 @@ package ru.job4j.calculate;
 public class Calculate {
 	
 	 /**
-     * Main.
+     * Main. Eah
      * @param args - args.
      */
 	public static void main(String[] args) {
