@@ -11,6 +11,9 @@ public class MaxTest {
         Max maxim = new Max();
         int result = maxim.max(1, 2);
         assertThat(result, is(2));
+
+        result = maxim.max(7, 2,6);
+        assertThat(result, is(7));
     }
 
 }
