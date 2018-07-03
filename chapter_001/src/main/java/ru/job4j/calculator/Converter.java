@@ -12,14 +12,9 @@ public class Converter {
      * @param val
      * @param curs
      */
-    public void SetVal(String val, double curs){
-        switch (val){
-            case "EUR": this.eur = curs;
-            case "USD": this.usd = curs;
-            default:
-                    System.out.println("Нет такой валюты в кассе!");
-                    break;
-        }
+    public void SetVal(String val, double curs) {
+        if (val.equals("EUR")) this.eur = curs;
+        if (val.equals("USD")) this.usd = curs;
     }
 
     /** Тут конвертируем валюту
@@ -31,14 +26,10 @@ public class Converter {
      */
     public double RubToVal(double value,String cur, boolean rivers){
         double val = 0;
-        switch (cur){
-            case "EUR": val = this.eur;
-            case "USD": val = this.usd;
-            default:
-                        System.out.println("Нет такой валюты в кассе!");
-                        break;
-        }
-        if (rivers) val = 1 / val;
+
+        if (cur.equals("EUR")) val = this.eur;
+        if (cur.equals("USD")) val = this.usd;
+        if (rivers && val!=0) val = 1 / val;
         return val*value;
     }
 }

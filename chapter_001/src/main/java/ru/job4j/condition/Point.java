@@ -1,5 +1,7 @@
 package ru.job4j.condition;
 
+import ru.job4j.calculator.Converter;
+
 public class Point {
     private int x;
     private int y;
@@ -15,6 +17,14 @@ public class Point {
 
         double result = a.distanceTo(b);
         System.out.println("Расстояние между точками А и В : " + result);
+
+        Converter conv = new Converter();
+        System.out.println("zz");
+        conv.SetVal("EUR",50);
+        System.out.println("zopa");
+        conv.RubToVal(5,"EUR", false);
+
+
     }
 
     public  Point(int x, int y) {
