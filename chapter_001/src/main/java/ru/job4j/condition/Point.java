@@ -1,12 +1,17 @@
 package ru.job4j.condition;
 
 import ru.job4j.calculator.Converter;
+import ru.job4j.loop.Paint;
 
 public class Point {
     private int x;
     private int y;
 
     public static void main(String[] args) {
+
+        Paint paint = new Paint();
+        System.out.println(paint.pyramid(5));
+
         Point a = new Point(0, 1);
         Point b = new Point(2, 5);
         // сделаем вызов метода
