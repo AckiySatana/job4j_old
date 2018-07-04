@@ -49,7 +49,7 @@ public class Triangle {
      * @return
      */
     private boolean exist(double ab, double ac, double bc) {
-        if ( (ab + ac < bc) || (ab + bc < ac) || (bc + ac < ab)) return false;
-        return true;
+        return ((ab + ac > bc) && (ab + bc > ac) && (bc + ac > ab));
+
     }
 }
