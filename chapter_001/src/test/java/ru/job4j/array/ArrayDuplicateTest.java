@@ -3,7 +3,10 @@ package ru.job4j.array;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
+import java.util.Arrays;
 import static org.junit.Assert.assertThat;
+import org.hamcrest.collection.IsArrayContainingInAnyOrder;
+
 
 public class ArrayDuplicateTest {
     @Test
@@ -13,6 +16,6 @@ public class ArrayDuplicateTest {
         //напишите здесь тест, проверяющий удаление дубликатов строк из массива строк.
         String[] result = dupDup.remove(st);
         String[] b = new String[] {"123","222","45","11"};
-        assertThat(result,is(b));
+        assertThat(b, IsArrayContainingInAnyOrder.arrayContainingInAnyOrder(result));
     }
 }
