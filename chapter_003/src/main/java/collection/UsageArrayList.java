@@ -1,5 +1,4 @@
 package collection;
-
 import java.util.ArrayList;
 
 public class UsageArrayList {
@@ -8,8 +7,7 @@ public class UsageArrayList {
         names.add("Petr");
         names.add("Ivan");
         names.add("Stepan");
-        for (String st: names
-             ) {
+        for (String st: names) {
             System.out.println(st);
         }
     }
